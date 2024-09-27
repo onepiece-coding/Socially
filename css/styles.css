@@ -1,0 +1,124 @@
+/* Start Header Styles */
+
+.main-header {
+  position: relative;
+  height: 9.6rem;
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.header--socially-logo {
+  width: 130px;
+  display: flex;
+}
+
+.header--socially-logo img {
+  max-width: 100%;
+}
+
+.header--navbar {
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2.4rem 1.6rem;
+  background: linear-gradient(to bottom, #e65690, #d44bcc);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.4s;
+}
+
+.header--navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header--nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.header--nav-link,
+.header--action-link {
+  padding: 1.2rem 1.6rem;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.toggle-navabr-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(to bottom, #e65690, #d44bcc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-navabr-btn svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  stroke: #fff;
+}
+
+.header--actions {
+  display: none;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Start Header Styles */
+
+/* Start Hero Styles */
+
+.hero {
+  min-height: calc(100vh - 9.6rem);
+  display: flex;
+  align-items: center;
+  padding: 6.4rem 1.6rem;
+  flex-direction: column;
+  background: url(../images/back-image.webp) no-repeat center;
+}
+
+.hero--text-box {
+  margin-bottom: 4.8rem;
+  text-align: center;
+}
+
+.hero--text-desc {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  animation: fadeIn 0.4s 0.2s forwards;
+}
+
+.hero--text-box .btn {
+  display: inline-block;
+  margin-top: 3.2rem;
+  animation: fadeIn 0.4s 0.4s forwards;
+}
+
+.hero--img-box {
+  display: flex;
+}
+
+.hero--img-box img {
+  max-width: 100%;
+  animation: fadeIn 0.4s 0.6s forwards;
+}
+
+.hero--text-desc,
+.hero--text-box .btn,
+.hero--img-box img {
+  transform: translateY(16px);
+  opacity: 0;
+}
+
+/* End Hero Styles */
