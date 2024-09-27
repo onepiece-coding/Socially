@@ -43,6 +43,7 @@ Socially/
 │   └── style.css       # Main CSS file
 └── assets/
     └── images/         # Folder for images and icons
+```
 
 ## 💡 Lessons Learned
 
